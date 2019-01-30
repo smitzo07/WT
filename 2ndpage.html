@@ -1,0 +1,74 @@
+ <!DOCTYPE html>
+ 
+  
+  
+<html>
+<head>
+<title>------------2nd page----------- </title>
+
+</head>
+<body style="background-color:lightgray;">
+<script src="/home/pccoe/Desktop/WTform/validate.js">
+
+function ValidateEmail(mail) 
+{
+  if (/^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/.test(myForm.emailAddr.value))
+  {
+    return (true)
+  }
+  alert("You have entered an invalid email address!")
+  return (false)
+}
+ </script>
+ 
+ 
+<h1 style="text-align:center;background-color:tomato;"><i>-----------REGISTER--------- </i></h1>
+
+<form ... onsubmit="return chechForm(this);">
+<form  method="get" > 
+	First Name : <br>
+	<input type="text" placeholder="First Name" required><br>
+	
+	<br><br>
+	Last Name : <br>
+	<input type="text" placeholder="Last Name" required><br>
+	
+	<br><br>
+	Email id: <br>
+	<input type="email" placeholder="abc@gmail.com" required><br>
+	
+	<br><br>
+	Mobile no.: <br>
+	<input type="text" placeholder="897344233" required><br>
+	
+	<br><br>
+	 DOB:
+ 	 <input type="date" name="bday" required>> <br>
+	
+	<br><br>
+	Gender: <br>
+  	<input type="radio" name="gender" value="male" > Male<br>
+  	<input type="radio" name="gender" value="female"> Female<br>
+  	<input type="radio" name="gender" value="other"> Other
+  	
+  	<br><br>
+	Username : <br>
+	<input type="text" placeholder="Username" required><br>
+  
+  	<br>
+  	<label>password : <br>
+  	<input name="password" id="password" type="password" placeholder="password" onkeyup='check();' />
+	</label>
+	<br>
+	<br>
+	<label>confirm password: <br>
+  	<input type="password" name="confirm_password" id="confirm_password" placeholder="password" onkeyup='check();' /> 
+  	<span id='message'></span>
+	</label>
+	<br><br>
+  	<input type="submit" value="Submit">
+</form>
+
+</form> 
+</body>
+</html> 
